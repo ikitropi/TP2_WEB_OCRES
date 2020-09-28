@@ -5,72 +5,105 @@
 
 		<link rel="stylesheet" href="css/reset.css"/>
 		<link rel="stylesheet" href="css/global.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js">
+	
 	</head>
 	<body>
 		<header>
-			<div class="wrapper">
-				<div class="logo-search">
-					<img class="pull-left" src="img/logo.png" />
-				</div>
+			<div class="container">
+				
+					<div class="wrapper">
+						<div class="row">	
+						<div class="col-sm">
+						<div class="logo-search">
+							<img class="pull-left" src="img/logo.png" />
+						</div>
+						</div>
 
-				<form method="POST" action="index.html">
-					<input type="search" required class="search">
-					<input type="submit" name="submit" value="Rechercher" class="submit">
-				</form>
-				<div class="user">
-				    <a href="#">Luke Chesser</a>
+						<div class="col-sm-4">
+						<form method="POST" action="index.html">
+							<input type="search" required class="search">
+							<input type="submit" name="submit" value="Rechercher" class="submit">
+						</form>
+					</div>
+					<div class="col-sm">
+						<div class="user">
+						    <a href="#">Luke Chesser</a>
+						</div>
+					</div>
+					</div>
 				</div>
 			</div>
 		</header>
-		<aside>
-			<h3>Browse</h3>
-			<nav class="browse">
-				<ul class="main">
-					<li><a class="heavy" href="#">Heavy Rotation</a></li>
-					<li><a class="recent" href="#">Recent Activity</a></li>
-					<li><a class="top" href="#">Top Charts</a></li>
-					<li><a class="new" href="#">New Releases</a></li>
-				</ul>
-			</nav>
-			<h3>Your music</h3>
-			<nav class="music">
-				<ul class="main">
-					<li><a class="collection" href="#">Collection</a></li>
-					<li><a class="history" href="#">History</a></li>
-				</ul>
-			</nav>
-		</aside>
 
-		<main>
-			<header>
-				<div class="name-photo">
-					<aside>
-						<img src="img/artist.png" />
-					</aside>
-					<div class="name">
-						<h1>Luke Chesser</h1>
-						<p>Montreal, Quebec, Canada <a href="https://www.facebook.com/" target="_blank"><img class="share" src="img/icon/fb.png" /></a><a href="https://twitter.com/" target="_blank"><img class="share" src="img/icon/twitter.png" /></a></p>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+              		
+						<aside>
+							<h3>Browse</h3>
+							<nav class="browse">
+								<ul class="main">
+									<li><a class="heavy" href="#">Heavy Rotation</a></li>
+									<li><a class="recent" href="#">Recent Activity</a></li>
+									<li><a class="top" href="#">Top Charts</a></li>
+									<li><a class="new" href="#">New Releases</a></li>
+								</ul>
+							</nav>
+							<h3>Your music</h3>
+							<nav class="music">
+								<ul class="main">
+									<li><a class="collection" href="#">Collection</a></li>
+									<li><a class="history" href="#">History</a></li>
+								</ul>
+							</nav>
+						</aside>
 					</div>
-				</div>
-				<div class="stats-links">
-					<section class="stats">
-						<span>2 Playlists</span>
-						<span>4 Reviews</span>
-						<span>6 Followers</span>
-						<span>13 Following</span>
-					</section>
-					<div class="links">
-						<div>
-							<a href="#">Collection</a>
-							<a href="#">History</a>
+				<div class="col-sm-8">
+				<main>
+					<header>
+						<div class="name-photo">
+							<aside>
+								<img src="img/artist.png" />
+							</aside>
+							<div class="name">
+								<h1>Luke Chesser</h1>
+								<p>Montreal, Quebec, Canada <a href="https://www.facebook.com/" target="_blank"><img class="share" src="img/icon/fb.png" /></a><a href="https://twitter.com/" target="_blank"><img class="share" src="img/icon/twitter.png" /></a></p>
+							</div>
 						</div>
-					</div>
-				</div>
-			</header>
+						<div class="stats-links">
+							<div class="row">
+								<div class="col-sm-8">
+							<section class="stats">
+								<span>2 Playlists</span>
+								<span>4 Reviews</span>
+								<span>6 Followers</span>
+								<span>13 Following</span>
+							</section>
+						</div>
+						<div class="col-sm-4">
+							<div class="links">
+								<div>
+									<a href="#">Collection</a>
+									<a href="#">History</a>
+								</div>
+							</div>
+						</div>
+						</div>
+					</header>
+				
+			<div class="row">
+			<div class="col-sm-8">
 			<h2>Top Album</h2>
+		</div>
+		<div class="col-sm-4">
 			<div>
 				<a class="station" href="#">Start Station</a>
 			</div>
+		</div>
 			<section id="albums">
 				<article>
 					<figure>
@@ -154,5 +187,8 @@
 				</article>
 			</section>
 		</main>
+	</div>
+</div>
+
 	</body>
 </html>
