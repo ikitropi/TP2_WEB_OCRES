@@ -209,6 +209,34 @@ nav.browse a, nav.music a {
     padding-top: 0.125em;
 }
 
+@media screen and (max-width: 540px) {
+  #barre { visibility:hidden;}
+  .share { visibility:hidden;}
+
+}
+@media screen and (max-width: 450px) {
+    * { 
+    font-size: smaller;
+}
+
+
+}
+@media screen and (min-width: 450px) and (max-width: 600px) {
+
+       * { 
+    font-size: small;
+}
+}
+@media screen and (min-width: 600px) and (max-width: 1400px) {
+ 
+       * { 
+    font-size: medium;
+}
+}
+
+
+
+
 nav a.heavy { background: url("../img/icon/heavy.png") no-repeat 0em; }
 nav a.recent { background: url("../img/icon/recent.png") no-repeat 0em; }
 nav a.top { background: url("../img/icon/top.png") no-repeat 0em; }
